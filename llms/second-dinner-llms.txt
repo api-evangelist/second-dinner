@@ -1,0 +1,37 @@
+# Second Dinner
+
+> Second Dinner is an independent, remote-first video game studio in Irvine, California, founded in 2018 by former Blizzard Hearthstone developers. Its debut title is MARVEL SNAP, a digital collectible card game built in Unity. Second Dinner ships consumer games, not developer platforms: as of 2026-08-05 it publishes no public API, SDK, developer portal, or machine-readable specification.
+
+<!--
+generated: '2026-08-05'
+method: generated
+source: apis.yml + API Evangelist enrichment probes (no provider /llms.txt is published;
+  https://www.seconddinner.com/llms.txt returned 403 (S3 AccessDenied, no such object)
+  and https://marvelsnap.com/llms.txt returned 404 on 2026-08-05)
+-->
+
+## Company
+
+- [Second Dinner](https://www.seconddinner.com/): Studio homepage — company overview and careers.
+- [Careers](https://www.seconddinner.com/careers/): Open roles, hosted on Ashby at https://jobs.ashbyhq.com/SecondDinner.
+- [Privacy Policy](https://www.seconddinner.com/privacy-policy): Studio privacy policy.
+- [GitHub organization](https://github.com/seconddinner): 7 public repositories, primarily forks of Unity build/test tooling (unity-builder, unity-test-runner, uGUI, com.unity.ide.cursor, pulumi-honeycomb) plus two original repos (stress-test-loader, reddit-monitor-tool). No API definitions or client SDKs are published here.
+
+## Products
+
+- [MARVEL SNAP](https://www.marvelsnap.com/): Fast-paced digital collectible card game. Consumer product; no public developer API.
+- [MARVEL SNAP news](https://marvelsnap.com/news/): Dated game news and patch notes.
+- [MARVEL SNAP web shop](https://shop.marvelsnap.com/): Player-facing web shop operated with Xsolla. Storefront only — no documented public API.
+
+## API surface
+
+No public API surface was found. Contract discovery on 2026-08-05 probed `seconddinner.com`,
+`www.seconddinner.com`, `marvelsnap.com`, `www.marvelsnap.com` and `shop.marvelsnap.com` for
+`/openapi.json`, `/swagger.json`, `/api-docs`, `/llms.txt`, `/developers`, `/api`, and the
+`/.well-known/` discovery surface (`agent-card.json`, `agent.json`, `security.txt`, `api-catalog`,
+`ai-plugin.json`). Every path missed. `api.seconddinner.com` and `api.marvelsnap.com` do not resolve.
+No first-party packages were found on npm, PyPI, or NuGet.
+
+## Artifacts published by API Evangelist
+
+- [Domain security](security/second-dinner-domain-security.yml): Probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC posture for seconddinner.com.

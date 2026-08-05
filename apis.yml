@@ -1,17 +1,32 @@
 aid: second-dinner
 name: Second Dinner
-description: 'Second Dinner is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Second Dinner is an independent, remote-first video game studio headquartered
+  in Irvine, California, founded in 2018 by a group of former Blizzard Hearthstone
+  developers including Hamilton Chu, Ben Brode, Yong Woo, Jomaro Kindred and Michael
+  Schweitzer. Its debut title, MARVEL SNAP, is a fast-paced digital collectible card
+  game built in Unity that won Mobile Game of the Year at both The Game Awards and
+  the DICE Awards along with an Apple Design Award, and the studio has since been
+  reported to be building its next title on the Godot engine. Second Dinner raised
+  a $100M Series B led by Griffin Gaming Partners in January 2024. The studio ships
+  consumer games rather than developer platforms: it publishes no public API, SDK,
+  developer portal, or machine-readable specification, and its public engineering
+  footprint is a small GitHub organization of Unity build and test tooling forks.'
+image: https://images.ctfassets.net/jgt5qzadk2ry/d1Hv9qzoyC47v1cIxEgDP/b7e1885f3299fc74d073ddfa206e7c93/ico-6.png
 url: https://raw.githubusercontent.com/api-evangelist/second-dinner/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-05'
 modified: '2026-08-05'
 tags:
 - Company
+- Video Games
+- Game Development
+- Gaming
+- Entertainment
+- Mobile Games
+- Card Games
+- Unity
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +34,48 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/second-dinner-domain-security.yml
+- type: LLMsTxt
+  url: llms/second-dinner-llms.txt
 - type: Website
+  url: https://www.seconddinner.com/
+- type: GitHubOrganization
+  url: https://github.com/seconddinner
+- type: PrivacyPolicy
+  url: https://www.seconddinner.com/privacy-policy
+- type: Careers
+  url: https://www.seconddinner.com/careers/
+- type: Product
+  name: MARVEL SNAP
+  url: https://www.marvelsnap.com/
+- type: Blog
+  url: https://marvelsnap.com/news/
+- type: SecondaryMarket
   url: https://forgeglobal.com/second-dinner_stock/
+x-enrichment:
+  date: '2026-08-05'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: Second Dinner ships consumer games only — MARVEL SNAP has a player web shop
+    and a leaderboard page but no developer surface, and contract discovery across
+    seconddinner.com, marvelsnap.com and shop.marvelsnap.com found no OpenAPI, no
+    /.well-known/ document, no llms.txt, no /developers page, and no first-party
+    package on npm, PyPI or NuGet; api.seconddinner.com and api.marvelsnap.com do
+    not resolve in DNS.
+  evidence:
+  - url: https://marvelsnap.com/openapi.json
+    status: 404
+  - url: https://marvelsnap.com/developers
+    status: 404
+  - url: https://marvelsnap.com/.well-known/agent-card.json
+    status: 404
+  - url: https://shop.marvelsnap.com/.well-known/api-catalog
+    status: 404
+  - url: https://www.seconddinner.com/openapi.json
+    status: 403
+  checked: '2026-08-05'
