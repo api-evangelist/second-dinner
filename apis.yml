@@ -11,6 +11,17 @@ description: 'Second Dinner is an independent, remote-first video game studio he
   consumer games rather than developer platforms: it publishes no public API, SDK,
   developer portal, or machine-readable specification, and its public engineering
   footprint is a small GitHub organization of Unity build and test tooling forks.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://images.ctfassets.net/jgt5qzadk2ry/d1Hv9qzoyC47v1cIxEgDP/b7e1885f3299fc74d073ddfa206e7c93/ico-6.png
 url: https://raw.githubusercontent.com/api-evangelist/second-dinner/refs/heads/main/apis.yml
 x-type: company
