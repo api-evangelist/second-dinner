@@ -22,6 +22,18 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://images.ctfassets.net/jgt5qzadk2ry/d1Hv9qzoyC47v1cIxEgDP/b7e1885f3299fc74d073ddfa206e7c93/ico-6.png
 url: https://raw.githubusercontent.com/api-evangelist/second-dinner/refs/heads/main/apis.yml
 x-type: company
